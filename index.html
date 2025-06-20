@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+
+  ...
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EG5KGB2E5P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EG5KGB2E5P');
+  </script>
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akhila Mohanan - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+
+  <style>
+
+  body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+}
+
+
+
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #a42626;
+      color: white;
+      padding: 20px;
+      overflow-y: auto;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .sidebar img {
+      border-radius: 50%;
+      width: 150px;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 15px 0;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 8px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .sidebar a:hover,
+    .sidebar a.active {
+      background-color: #ff3385;
+      color: white;
+    }
+    .main-content {
+      margin-left: 270px;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2, h3 {
+      color: #a42626;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      color: #000;
+    }
+    .weather, .joke, .clock {
+      margin-top: 20px;
+    }
+    .weather h5, .joke h5 {
+      color: #a42626;
+    }
+    canvas {
+      display: block;
+      margin: auto;
+    }
+    .contact-card {
+      background: #2c3e50;
+      color: white;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .contact-card h3 {
+      color: #f1c40f;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .contact-card p {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .contact-card button {
+      margin-left: 10px;
+    }
+    .contact-card a i {
+      color: white;
+      transition: color 0.3s ease;
+    }
+    .contact-card a i:hover {
+      color: #f1c40f;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+
+<div class="sidebar text-center" id="navbar">
+  <img src="59168f60-c4fc-4e29-9ef4-bd06415f8e10.png" alt="Profile Picture">
+  <a class="nav-link" href="#about">About</a>
+  <a class="nav-link" href="#summary">Summary</a>
+  <a class="nav-link" href="#education">Education</a>
+  <a class="nav-link" href="#skills">Skills</a>
+  <a class="nav-link" href="#experience">Experience</a>
+  <a class="nav-link" href="#leadership">Leadership</a>
+  <a class="nav-link" href="#tracker">Tracker</a>
+  <a class="nav-link" href="#comic">Comic</a>
+</div>
+
+<div class="main-content">
+
+
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>Akhila Mohanan<br>Dayton, OH - 45409<br>+1 (216) 224-4186<br>
+    <a href="mailto:mohanana2@udayton.edu">mohanana2@udayton.edu</a></p>
+  </section>
+
+  <section id="summary" class="card">
+    <h2>Summary</h2>
+    <p>A creative, detail-oriented professional skilled in problem-solving and innovation. Experienced in technical roles, delivering quality results on time. Seeking a project management or research role to apply AI, data science, and software engineering expertise to drive business success.</p>
+  </section>
+
+  <section id="education" class="card">
+    <h3>Education</h3>
+    <ul>
+      <li><strong>University of Dayton</strong>, Dayton, OH<br>MS in Computer Science, Expected Dec 2026</li>
+      <li><strong>NEFTU</strong>, India<br>BTech in Computer Science, May 2018</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="card">
+    <h3>Skills</h3>
+    <p><strong>Programming:</strong> Java, PHP, Angular, HTML, CSS, JS, Bootstrap, MySQL</p>
+    <p><strong>Tools:</strong> Git, Postman, VS Code, MongoDB</p>
+    <p><strong>Soft Skills:</strong> Leadership, Time Management, Communication</p>
+    <p><strong>Languages:</strong> Malayalam (Fluent), Tamil (Fluent), Hindi (Average)</p>
+  </section>
+
+  <section id="experience" class="card">
+    <h3>Experience</h3>
+    <p><strong>Reviewbit KUSM</strong>, India | Oct 2020 – Oct 2024<br>Software Engineer</p>
+    <ul>
+      <li>Developed RESTful APIs for seamless frontend-backend integration</li>
+      <li> Designed and optimized databases for performance and reliability</li>
+      <li>Implemented secure user authentication with JWT</li>
+      <li>Integrated third-party APIs for payment, location, and notifications</li>
+      <li>Collaborated across teams to ensure on-time delivery of robust applications</li>
+    </ul>
+    <p><strong>Veuz Concepts</strong>, India | Dec 2018 – Oct 2020<br>MEAN Stack Developer</p>
+    <ul>
+      <li>Developed custom CRM solutions and enhanced UX</li>
+      <li>Gathered requirements and helped design custom CRM systems</li>
+      <li>Developed and deployed CRM applications with a focus on usability</li>
+      <li>Boosted performance and user experience through iterative development</li>
+    </ul>
+  </section>
+
+  <section id="leadership" class="card">
+    <h3>Leadership & Involvement</h3>
+    <ul>
+      <li>Cooking Club Lead, Dayton OH (2022–2023)</li>
+      <li>Health Club Lead, Dayton OH (2018–2019)</li>
+    </ul>
+  </section>
+
+  <section id="tracker" class="card">
+    <h3>Tracker & Extras</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card weather">
+          <h5>🌦️ Local Weather</h5>
+          <p id="weather-box">Fetching weather...</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card joke">
+          <h5>Quote of the Day</h5>
+          <p id="joke-box">Loading joke...</p>
+        </div>
+      </div>
+    </div>
+    <div class="card clock">
+      <p>Current time: <span id="digit-clock"></span></p>
+      <canvas id="analog-clock" width="200" height="200"></canvas>
+    </div>
+  </section>
+
+ <section id="xkcd" class="card text-center">
+  <h3>XKCD Comic</h3>
+  <div class="d-flex justify-content-center">
+    <img id="xkcd-img" src="" alt="XKCD Comic" class="img-fluid rounded shadow" style="max-width: 600px; height: auto;">
+  </div>
+  <p id="xkcd-title" class="mt-2 fw-bold text-dark"></p>
+</section>
+
+</div>
+
+<!-- New Contact DIV -->
+<div class="card text-center p-4 mt-5" style="background: #2c3e50; color: white; border-radius: 15px; max-width: 600px; margin: auto;">
+  <h3 style="color: #f1c40f; font-weight: bold;">Contact</h3>
+  <p>Email: <strong id="email-text">mohanana2@udayton.edu</strong>
+    <button onclick="copyEmail()" class="btn btn-success btn-sm ms-2">Copy</button>
+  </p>
+  <p>Phone: (216) 224-4186</p>
+<!-- Flag Counter at bottom -->
+<div class="text-center mt-4">
+  <a href="https://info.flagcounter.com/xyz" target="_blank">
+    <img src="https://s11.flagcounter.com/count2/xyz/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_3/labels_1/pageviews_1/flags_1/percent_0/" alt="Flag Counter" border="0">
+  </a>
+</div>
+
+
+  <div class="d-flex justify-content-center gap-3 mt-3">
+    <a href="https://linkedin.com/in/akhilamohanan" target="_blank">
+      <i class="fab fa-linkedin fa-2x" style="color: white;"></i>
+    </a>
+    <a href="https://github.com/your-github-username" target="_blank">
+      <i class="fab fa-github fa-2x" style="color: white;"></i>
+    </a>
+  </div>
+
+  <!-- Cookie Welcome Message Placed Here -->
+    <div class="card p-4 text-center" style="background: #e0f7fa; border-radius: 15px;">
+        <h5 class="text-primary fw-bold">Visitor Info</h5>
+        <div id="visit-msg" class="mt-2" style="color: #333;"></div>
+      </div>
+</div>
+
+
+<!-- Cookie Consent -->
+<div id="cookie-banner" style="position:fixed; bottom:0; left:0; right:0; background:#000; color:#fff; text-align:center; padding:10px; z-index:9999;">
+  This website uses cookies to enhance your experience. By continuing, you accept all cookies.
+  <button onclick="document.getElementById('cookie-banner').style.display='none'" style="margin-left: 10px; padding:5px 15px; background: #4b00ff; color: #fff; border:none; border-radius: 5px;">Accept All Cookies</button>
+</div>
+
+<script>
+  function drawFace(ctx, radius) {
+    ctx.beginPath();
+    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+    ctx.fillStyle = 'white';
+    ctx.fill();
+    ctx.strokeStyle = '#333';
+    ctx.lineWidth = radius * 0.05;
+    ctx.stroke();
+  }
+  function drawNumbers(ctx, radius) {
+    ctx.font = radius * 0.15 + "px arial";
+    ctx.textBaseline = "middle";
+    ctx.textAlign = "center";
+    for (let num = 1; num <= 12; num++) {
+      const ang = num * Math.PI / 6;
+      ctx.rotate(ang);
+      ctx.translate(0, -radius * 0.85);
+      ctx.rotate(-ang);
+      ctx.fillText(num.toString(), 0, 0);
+      ctx.rotate(ang);
+      ctx.translate(0, radius * 0.85);
+      ctx.rotate(-ang);
+    }
+  }
+  function drawTime(ctx, radius) {
+    const now = new Date();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    let second = now.getSeconds();
+    hour %= 12;
+    hour = (hour * Math.PI / 6) + (minute * Math.PI / (6 * 60)) + (second * Math.PI / (360 * 60));
+    drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+    minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+    drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+    second = (second * Math.PI / 30);
+    drawHand(ctx, second, radius * 0.9, radius * 0.02);
+  }
+  function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0, 0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+  }
+
+  window.onload = function () {
+    setInterval(() => {
+      document.getElementById('digit-clock').innerHTML = new Date().toLocaleString();
+    }, 1000);
+
+    fetch("https://v2.jokeapi.dev/joke/Any?type=single")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("joke-box").innerText = data.joke;
+      });
+
+    navigator.geolocation.getCurrentPosition(position => {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+      const apiKey = "11a98dce0622a6bbc88289d04fed1267"; // replace with your real key
+      const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          const city = data.name;
+          const temp = data.main.temp;
+          const desc = data.weather[0].description;
+          document.getElementById("weather-box").innerHTML = `📍 <b>${city}</b>: ${temp}°C, ${desc}`;
+        })
+        .catch(() => {
+          document.getElementById("weather-box").innerText = "Unable to fetch weather.";
+        });
+    });
+
+    const canvas = document.getElementById("analog-clock");
+    if (canvas && canvas.getContext) {
+      const ctx = canvas.getContext("2d");
+      let radius = canvas.height / 2;
+      ctx.translate(radius, radius);
+      radius *= 0.90;
+      setInterval(() => {
+        ctx.clearRect(-canvas.width, -canvas.height, canvas.width * 2, canvas.height * 2);
+        drawFace(ctx, radius);
+        drawNumbers(ctx, radius);
+        drawTime(ctx, radius);
+      }, 1000);
+    }
+  };
+
+    function copyEmail() {
+    const email = document.getElementById("email-text").textContent;
+    navigator.clipboard.writeText(email).then(() => {
+      alert("Email copied to clipboard!");
+    });
+  }
+
+ // Step 1: Get the latest comic number
+fetch("https://xkcd.now.sh/?comic=latest")
+  .then(response => response.json())
+  .then(latest => {
+    const max = latest.num;
+    const randomNum = Math.floor(Math.random() * max) + 1;
+    return fetch(`https://xkcd.now.sh/?comic=${randomNum}`);
+  })
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("xkcd-img").src = data.img;
+    document.getElementById("xkcd-title").innerText = data.title;
+  })
+  .catch(() => {
+    document.getElementById("xkcd-title").innerText = "Failed to load XKCD comic.";
+  });
+
+// Function to get cookie by name
+function getCookie(name) {
+  let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+  return match ? decodeURIComponent(match[2]) : null;
+}
+
+// Function to set cookie
+function setCookie(name, value, days) {
+  const expires = new Date(Date.now() + days*24*60*60*1000).toUTCString();
+  document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + expires + ";path=/";
+}
+
+// Show welcome message based on visit history
+window.addEventListener("load", function () {
+  const visitDiv = document.getElementById("visit-msg");
+  const lastVisit = getCookie("lastVisit");
+
+  const now = new Date();
+  if (!lastVisit) {
+    visitDiv.innerText = "Welcome to my homepage for the first time!";
+  } else {
+    visitDiv.innerText = "Welcome back! Your last visit was " + lastVisit;
+  }
+
+  // Update the cookie for next visit
+  setCookie("lastVisit", now.toLocaleString(), 30);
+});
+
+
+</script>
+
+</body>
+</html>
