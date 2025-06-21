@@ -412,13 +412,12 @@
     }
   };
 
-    function copyEmail() {
-    const email = document.getElementById("email-text").textContent;
+     function copyEmail() {
+    const email = "mohanana2@udayton.edu";
     navigator.clipboard.writeText(email).then(() => {
       alert("Email copied to clipboard!");
     });
   }
-
  // Step 1: Get the latest comic number
 fetch("https://xkcd.now.sh/?comic=latest")
   .then(response => response.json())
