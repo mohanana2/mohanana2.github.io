@@ -4,7 +4,7 @@
 **Student:** Akhila Mohanan  
 **Email:** mohanana2@udayton.edu  
 
-![Headshot](Akhila.jpg)
+![Headshot](Akhila.jpeg)
 
 ---
 
