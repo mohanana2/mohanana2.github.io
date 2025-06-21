@@ -130,8 +130,22 @@
       transition: color 0.3s ease;
     }
     .contact-card a i:hover {
-      color: #f1c40f;
+      color: #a42626;
     }
+     .joke-box {
+      background-color: #fdf3e7;
+      color: #333;
+      margin: 20px auto;
+      padding: 25px;
+      width: 80%;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* soft red glow */
+      font-size: 18px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    
   </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
@@ -153,8 +167,11 @@
 
   <section id="about" class="card">
     <h2>About Me</h2>
-    <p>Akhila Mohanan<br>Dayton, OH - 45409 <br>
-    <a href="mailto:mohanana2@udayton.edu">mohanana2@udayton.edu</a></p>
+    <p>Akhila Mohanan<br>Dayton, OH - 45409<br>
+    <div id="email" onclick="toggleEmail()" style="cursor: pointer; color: #007bff; text-decoration: underline;">
+  Show my email
+</div>
+
   </section>
 
   <section id="summary" class="card">
@@ -220,15 +237,31 @@
           <p id="joke-box">Loading joke...</p>
         </div>
       </div>
+       <div id="joke-container" class="joke-box">
+    <h2>Application Joke</h2>
+    <p id="joke-text">Loading a fun programming joke...</p>
+  </div>
     </div>
     <div class="card clock">
       <p>Current time: <span id="digit-clock"></span></p>
       <canvas id="analog-clock" width="200" height="200"></canvas>
     </div>
   </section>
+<section id="xkcd" class="card text-center">
+  <div class="course-preview" onclick="location.href='waph.html';" style="cursor: pointer;">
+  <h2>Courses</h2>
+  <p>
+    Explore in-depth insights into modern web application security and hands-on hacking techniques.
+  </p>
+  <p>
+    Welcome to the Web Application Programming and Hacking section. In this area, you'll find detailed information related to the course and its components. I will be showcasing content from <strong>course page</strong> here, providing in-depth insights into various topics.
+  </p>
+  <p style="color: #4da6ff;"><u>Click to view full course content</u></p>
+</div>
+</section>
 
  <section id="xkcd" class="card text-center">
-  <h3>XKCD Comic</h3>
+  <h3>Comic of the Day</h3>
   <div class="d-flex justify-content-center">
     <img id="xkcd-img" src="" alt="XKCD Comic" class="img-fluid rounded shadow" style="max-width: 600px; height: auto;">
   </div>
@@ -420,8 +453,39 @@ window.addEventListener("load", function () {
   setCookie("lastVisit", now.toLocaleString(), 30);
 });
 
+    function fetchJoke() {
+      fetch("https://v2.jokeapi.dev/joke/Programming?type=single")
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById("joke-text").innerText = data.joke;
+        })
+        .catch(() => {
+          document.getElementById("joke-text").innerText = "Couldn't load a joke right now.";
+        });
+    }
+
+    // Load first joke
+    fetchJoke();
+
+    // Fetch a new joke every 60 seconds (60000 ms)
+    setInterval(fetchJoke, 60000);
+
+let emailShown = false;
+
+  function toggleEmail() {
+    const emailDiv = document.getElementById("email");
+    if (emailShown) {
+      emailDiv.innerHTML = "Show my email";
+      emailShown = false;
+    } else {
+      const email = "<a href='mohanana2@udayton.edu'>mohanana2@udayton.edu</a>";
+      emailDiv.innerHTML = email;
+      emailShown = true;
+    }
+  }
 
 </script>
 
 </body>
 </html>
+
