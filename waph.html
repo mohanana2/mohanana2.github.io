@@ -4,28 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>WAPH - Web Application Programming and Hacking</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       background: linear-gradient(to right, #141e30, #243b55);
       color: #f8f9fa;
       font-family: Arial, sans-serif;
-      padding: 40px;
+      padding: 30px 15px;
     }
     .container {
-      background-color: rgba(255, 255, 255, 0.08);
+      max-width: 1100px;
+      background-color: rgba(255, 255, 255, 0.06);
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
     }
     h1, h2 {
       color: #ffc107;
-    }
-    p, li {
-      font-size: 16px;
-    }
-    ul {
-      padding-left: 20px;
     }
     a {
       color: #17a2b8;
@@ -34,65 +30,83 @@
     a:hover {
       text-decoration: underline;
     }
+    .section {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1 class="mb-4">Web Application Programming and Hacking</h1>
-    <p class="lead">
+    <h1 class="mb-4 text-center">Web Application Programming and Hacking</h1>
+    <p class="lead text-center">
       Dive deep into the world of web development and cybersecurity with our hands-on course.
     </p>
 
     <!-- General Information Section -->
-    <section class="mb-5">
-      <h2 class="text-warning">General Information</h2>
+    <div class="section">
+      <h2 class="mb-3">General Information</h2>
       <div class="row">
         <div class="col-md-6">
           <p><strong>Course:</strong> CPS499-Z1/499-P1/592-Z1 "Web Application Programming and Hacking"</p>
           <p><strong>Format:</strong> Asynchronous; lecture slides and video recordings posted twice a week on Canvas.</p>
-          <p><strong>Instructor:</strong> Dr. Phu Phung, Associate Professor, Department of Computer Science</p>
+          <p><strong>Instructor:</strong> Dr. Phu Phung</p>
           <p><strong>Email:</strong> <a href="mailto:phu@udayton.edu">phu@udayton.edu</a></p>
-          <p><strong>Instructor Homepage:</strong> <a href="https://go.udayton.edu/phu" target="_blank">https://go.udayton.edu/phu</a></p>
+          <p><strong>Homepage:</strong> <a href="https://go.udayton.edu/phu" target="_blank">go.udayton.edu/phu</a></p>
         </div>
         <div class="col-md-6">
           <p><strong>Grader:</strong> Amruth Raj Bitla</p>
           <p><strong>Grader Email:</strong> <a href="mailto:bitlaa1@udayton.edu">bitlaa1@udayton.edu</a></p>
-          <p><strong>Online Office Hours:</strong> Wednesdays, 10:00 AM – 12:00 PM (book via <a href="https://calendly.com/phungphu/waph" target="_blank">Calendly</a>)</p>
-          <p><strong>In-person Help Session:</strong> Wednesdays, 2:00 PM – 3:30 PM in JHH 180</p>
-          <p class="text-muted"><em>Additional slots available upon request.</em></p>
+          <p><strong>Online Office Hours:</strong> Wed, 10:00 AM – 12:00 PM (<a href="https://calendly.com/phungphu/waph" target="_blank">Calendly</a>)</p>
+          <p><strong>In-Person Help:</strong> Wed, 2:00 PM – 3:30 PM @ JHH 180</p>
+          <p class="text-muted"><em>More slots available upon request.</em></p>
         </div>
       </div>
-      <p class="mt-3"><strong>Course Materials:</strong> Available on Canvas &rarr; Courses &rarr; 25_SU_FT_CPS_499/592_Z1</p>
-    </section>
+      <p class="mt-3"><strong>Course Materials:</strong> Available via Canvas → Courses → 25_SU_FT_CPS_499/592_Z1</p>
+    </div>
 
-    <h2 class="mt-5">Course Overview</h2>
-    <ul>
-      <li>Understanding Web Application Architecture: Client-Server Model, HTTP/HTTPS</li>
-      <li>Front-End Development: HTML5, CSS3, JavaScript ES6+</li>
-      <li>Back-End Development: Node.js, Python Flask/Django, Database Integration</li>
-      <li>Web Security Essentials: OWASP Top 10, Common Vulnerabilities</li>
-      <li>Hands-on Projects: Vulnerable Web App Labs, Capture the Flag (CTF) Challenges, Real-World Security Scenarios</li>
-      <li>Ethical Hacking Techniques: Penetration Testing, Security Auditing</li>
-      <li>Secure Coding Practices: Input Validation, Output Encoding</li>
-    </ul>
+    <!-- Course Overview Section -->
+    <div class="section">
+      <h2 class="mb-3">Course Overview</h2>
+      <ul>
+        <li>Understanding Web Application Architecture: Client-Server Model, HTTP/HTTPS</li>
+        <li>Front-End Development: HTML5, CSS3, JavaScript ES6+</li>
+        <li>Back-End Development: Node.js, Python Flask/Django, Database Integration</li>
+        <li>Web Security Essentials: OWASP Top 10, Common Vulnerabilities</li>
+        <li>Hands-on Projects: Vulnerable Web App Labs, CTF Challenges, Real-World Scenarios</li>
+        <li>Ethical Hacking Techniques: Penetration Testing, Security Auditing</li>
+        <li>Secure Coding Practices: Input Validation, Output Encoding</li>
+      </ul>
+    </div>
 
-    <h2 class="mt-5">Why Learn Web Application Security?</h2>
-    <p>
-      In today's digital age, web applications are the backbone of many businesses. Understanding both how to build and secure these applications is crucial.
-    </p>
-    <p>
-      This course provides you with the skills to develop robust web applications while also protecting them from potential threats. By exploring common vulnerabilities and ethical hacking techniques, you'll gain practical experience in securing web environments.
-    </p>
+    <!-- Why Learn Section -->
+    <div class="section">
+      <h2 class="mb-3">Why Learn Web Application Security?</h2>
+      <p>
+        In today's digital age, web applications are critical to business operations. Understanding how to both build and secure them is essential.
+      </p>
+      <p>
+        This course equips you with skills to develop robust web applications while protecting them from threats. Explore vulnerabilities and ethical hacking to secure real environments.
+      </p>
+    </div>
 
-    <h2 class="mt-5">What You'll Gain</h2>
-    <ul>
-      <li>Proficiency in modern web development technologies.</li>
-      <li>In-depth knowledge of web security principles and practices.</li>
-      <li>Practical skills in identifying and mitigating web vulnerabilities.</li>
-      <li>Experience in ethical hacking and penetration testing.</li>
-      <li>A portfolio of projects showcasing your ability to build and secure web applications.</li>
-    </ul>
+    <!-- What You'll Gain Section -->
+    <div class="section">
+      <h2 class="mb-3">What You'll Gain</h2>
+      <ul>
+        <li>Proficiency in modern web development technologies.</li>
+        <li>In-depth knowledge of web security principles and practices.</li>
+        <li>Practical skills in identifying and mitigating vulnerabilities.</li>
+        <li>Experience in ethical hacking and penetration testing.</li>
+        <li>A portfolio of secure, real-world web applications.</li>
+      </ul>
+    </div>
   </div>
 
 </body>
