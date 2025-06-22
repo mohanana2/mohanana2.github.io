@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-<!-- Google tag (gtag.js) -->
-
-  ...
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EG5KGB2E5P"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,46 +9,37 @@
     gtag('js', new Date());
     gtag('config', 'G-EG5KGB2E5P');
   </script>
-
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Akhila Mohanan - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  
-
   <style>
-
-  body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1470&q=80');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  color: #fff;
-}
-
-
-   .sidebar {
+    * {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+    }
+    .sidebar {
       position: fixed;
       top: 0;
       left: 0;
       width: 250px;
       height: 100%;
       background-color: #b30059;
-      color: white;
       padding: 20px;
       overflow-y: auto;
       box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
     }
-
     .sidebar img {
       border-radius: 50%;
-      width: 150px;
+      width: 130px;
       margin-bottom: 20px;
       border: 4px solid #fff;
     }
@@ -59,92 +47,97 @@
       color: white;
       text-decoration: none;
       display: block;
-      margin: 15px 0;
-      font-weight: bold;
-      font-size: 1.1rem;
-      padding: 8px;
-      border-radius: 5px;
-      transition: 0.3s;
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s ease;
     }
-    .sidebar a:hover,
-    .sidebar a.active {
+    .sidebar a:hover, .sidebar a.active {
       background-color: #ff3385;
-      color: white;
     }
     .main-content {
       margin-left: 270px;
-      padding: 40px 20px;
+      padding: 30px 20px;
     }
     section {
       margin-bottom: 50px;
     }
     h2, h3 {
-      color: #a42626;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 8px;
+      color: #ffc107;
       margin-bottom: 20px;
     }
     .card {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.95);
       border-radius: 10px;
       padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       color: #000;
     }
-    .weather, .joke, .clock {
+    .joke-box, .clock, .weather {
       margin-top: 20px;
     }
-    .weather h5, .joke h5 {
-      color: #a42626;
+    .footer-tracker img {
+      margin-top: 10px;
     }
-    canvas {
-      display: block;
-      margin: auto;
+    footer {
+      margin-top: 60px;
     }
-    .contact-card {
-      background: #2c3e50;
-      color: white;
-      border-radius: 15px;
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 30px;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    .icon-link i {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: color 0.3s;
     }
-    .contact-card h3 {
-      color: #f1c40f;
-      font-weight: bold;
-      margin-bottom: 20px;
+    .icon-link i:hover {
+      color: #ffc107;
     }
-    .contact-card p {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-    .contact-card button {
-      margin-left: 10px;
-    }
-    .contact-card a i {
-      color: white;
-      transition: color 0.3s ease;
-    }
-    .contact-card a i:hover {
-      color: #a42626;
-    }
-     .joke-box {
-      background-color: #fdf3e7;
-      color: #333;
-      margin: 20px auto;
-      padding: 25px;
-      width: 80%;
-      max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* soft red glow */
-      font-size: 18px;
-      transition: all 0.3s ease-in-out;
+    @media (max-width: 767px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .sidebar a {
+        margin: 5px;
+      }
+      .main-content {
+        margin-left: 0;
+        padding: 20px;
+      }
     }
 
-    
+      canvas {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+    max-height: 350px;
+  }
+    #joke-container {
+    background-color: #fffbe6;
+    border-left: 6px solid #ffa502;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+  }
+  #joke-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e17055;
+  }
+  #joke-text {
+    font-size: 1.1rem;
+  }
+
   </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
@@ -158,6 +151,7 @@
   <a class="nav-link" href="#experience">Experience</a>
   <a class="nav-link" href="#leadership">Leadership</a>
   <a class="nav-link" href="#tracker">Tracker</a>
+  <a class="nav-link" href="#course">Course</a>
   <a class="nav-link" href="#comic">Comic</a>
 </div>
 
@@ -243,12 +237,12 @@
     </div>
     <div class="card clock">
       <p>Current time: <span id="digit-clock"></span></p>
-      <canvas id="analog-clock" width="200" height="200"></canvas>
+      <canvas id="analog-clock" ></canvas>
     </div>
   </section>
-<section id="xkcd" class="card text-center">
+<<section id="course" class="card text-center">
   <div class="course-preview" onclick="location.href='waph.html';" style="cursor: pointer;">
-  <h2>Courses</h2>
+    <h2>Courses</h2>
   <p>
     Explore in-depth insights into modern web application security and hands-on hacking techniques.
   </p>
@@ -277,22 +271,21 @@
     <button onclick="copyEmail()" class="btn btn-success btn-sm ms-2">Copy</button>
   </p>
 
-  <!-- 🌍 Flag Counter -->
-  <div class="text-center mt-4">
-    <a href="https://info.flagcounter.com/xyz" target="_blank">
-      <img src="https://s11.flagcounter.com/count2/xyz/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_3/labels_1/pageviews_1/flags_1/percent_0/" alt="Flag Counter" border="0">
-    </a>
-  </div>
+  <section id="contact" class="p-4 text-center">
+  <h2 class="mb-4" style="color: #f1c40f; font-weight: bold;">Get In Touch</h2>
+  <p class="lead">Feel free to connect with me!</p>
+  <p>
+    <a href="mailto:mohanana2@udayton.edu" class="icon-link" style="color: white;"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/akhilamohanan/" target="_blank" class="icon-link"><i class="fab fa-linkedin" style="color: white;"></i></a>
+    <a href="https://github.com/mohanana2" target="_blank" class="icon-link"><i class="fab fa-github" style="color: white;"></i></a>
+  </p>
+  <p class="mt-4" style="color: #f1c40f; font-weight: bold;">
+    <small  >You can also find my resume <a
+      href="https://drive.google.com/file/d/1hht1AJ0HbnD0zVoV6H9LmGOdRssGhT0-/view?usp=drive_link" target="_blank" style="color: white;">here</a>.</small>
+  </p>
 
-  <!-- 🔗 Social Icons -->
-  <div class="d-flex justify-content-center gap-3 mt-3">
-    <a href="https://linkedin.com/in/akhilamohanan" target="_blank">
-      <i class="fab fa-linkedin fa-2x" style="color: white;"></i>
-    </a>
-    <a href="https://github.com/your-github-username" target="_blank">
-      <i class="fab fa-github fa-2x" style="color: white;"></i>
-    </a>
-  </div>
+</section>
+
 </div>
 
 <!-- 📊 Full-Width Visitor Info Box -->
@@ -310,6 +303,20 @@
   </div>
 </div>
 
+<footer class="bg-dark text-white text-center py-4 rounded-top-4 mt-5">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 Akhila Mohanan. All rights reserved.</p>
+    <p class="mb-1">Built with passion and a lot of JavaScript!</p>
+
+    <!-- Page Tracker Flag Counter -->
+    <div class="footer-tracker">
+      <a href="https://info.flagcounter.com/Q8eq" target="_blank">
+        <img src="https://s01.flagcounter.com/count/Q8eq/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+             alt="Flag Counter" border="0">
+      </a>
+    </div>
+  </div>
+</footer>
 
 
 <!-- Cookie Consent -->
@@ -498,4 +505,3 @@ let emailShown = false;
 
 </body>
 </html>
-
